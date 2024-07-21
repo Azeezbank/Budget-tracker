@@ -48,7 +48,7 @@ function addTransactionDOM(transaction) {
 <span>${transaction.date}</span>
 
 <button class="delete-btn"
-onclick="removeTransaction(${transaction.id})">*</button>
+onclick="removeTransaction(${transaction.id})">❌</button>
 
 `;
 
