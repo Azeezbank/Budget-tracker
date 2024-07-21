@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense tracker</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Budget Tracker</h2>
+      <div class="balance">
+        <h3>Your Balance</h3>
+        <h4 id="balance">$0.00</h4>
+      </div>
+
+      <div class="income-expense">
+        <div>
+          <h4>Income</h4>
+          <p id="income" class="money plus">$0.00</p>
+        </div>
+        <div>
+          <h4>Expense</h4>
+          <p id="expense" class="money minus">$0.00</p>
+        </div>
+      </div>
+      <h4>Add New Transaction</h4>
+      <form id="form">
+        <div class="form-control">
+          <label for="Description" name="Description">Description</label> <br />
+          <input
+            type="text"
+            mame="Description"
+            id="Description"
+            placeholder="Enter Description"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label for="Amount" name="Amount"
+            >Amount <br />
+            (Negative-expense, Positive-income)</label
+          >
+          <input
+            type="number"
+            name="Amount"
+            id="Amount"
+            placeholder="Enter amount"
+            required
+          />
+          <br />
+          <br />
+          <label for="date">Date</label>
+          <input type="date" name="date" id="date" required />
+        </div>
+        <button class="btn">Add Transaction</button>
+      </form>
+      <h2>History</h2>
+      <ul id="transaction-list" class="list"></ul>
+    </div>
+    <div></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
