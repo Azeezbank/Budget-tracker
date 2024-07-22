@@ -102,8 +102,11 @@ footer {
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 20px 10%;
+  padding: 20px 2%;
   text-align: left;
   color: #fff;
   border-bottom: 1px solid #555;
+}
+@media (min-width: 800px) {
+  .footer {padding: 20px 10%}
 }
