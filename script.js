@@ -104,6 +104,7 @@ form.addEventListener("submit", addTransaction);
 init();
 
 // hide and show history content
+document.addEventListener('DOMContentLoaded', () => {
 document.getElementById("content").addEventListener("click", () => {
   const option = document.getElementById("transaction-list");
   if (option.style.display === "none") {
@@ -113,4 +114,5 @@ document.getElementById("content").addEventListener("click", () => {
     option.style.display = "none";
     content.textContent = "History >";
   }
+});
 });
