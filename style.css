@@ -4,7 +4,6 @@
   padding: 0;
 }
 body {
-  display: flex;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
   text-align: center;
@@ -17,6 +16,7 @@ body {
   border-radius: 5px;
   width: 90%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 5%;
 }
 h2,
 h3,
@@ -91,4 +91,19 @@ h4 {
 .delete-btn {
   cursor: pointer;
   color: red;
+}
+footer {
+  background-color: #333;
+}
+.copy {
+  padding: 15px;
+  color: #fff;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  text-align: left;
+  color: #fff;
+  border-bottom: 1px solid #555;
 }
