@@ -108,9 +108,9 @@ document.getElementById("content").addEventListener("click", () => {
   const option = document.getElementById("transaction-list");
   if (option.style.display === "none") {
     option.style.display = "block";
-    content.textContent = "History >";
+    content.textContent = "History ▼";
   } else {
     option.style.display = "none";
-    content.textContent = "History <";
+    content.textContent = "History ▶";
   }
 });
